@@ -12,8 +12,8 @@ if (dockerDeploymentEnabled) exportHtmlEnabled = false;
 
 const nextConfig = {
     reactStrictMode: true,
-    // swcMinify is deprecated in 15.1.3, so setting it to false
-    swcMinify: false, 
+    // Replaced swcMinify with minify
+    minify: true,  // This is where the change happens
 
     productionBrowserSourceMaps: true,
 
@@ -47,3 +47,5 @@ const nextConfig = {
 
 module.exports = nextConfig;
 
+
+  
