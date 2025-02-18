@@ -12,9 +12,7 @@ if (dockerDeploymentEnabled) exportHtmlEnabled = false;
 
 const nextConfig = {
     reactStrictMode: true,
-    // Replaced swcMinify with minify
-    minify: true,  // This is where the change happens
-
+    // Removed the `minify` key, as it's unrecognized
     productionBrowserSourceMaps: true,
 
     // Output for Docker and static export
@@ -46,6 +44,7 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
 
 
   
